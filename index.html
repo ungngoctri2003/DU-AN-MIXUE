@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <title>Mixue</title>
 </head>
 <body>
-   Tris xau trai
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item " href="./index.html">Home</a>
+                    <a class="header__item" href="#">Sản Phẩm</a>
+                    <a class="header__item" href="#"> Tin Tức</a>
+                    <a class="header__item" href="#">Sự Kiện</a>
+                    <a class="header__item" href="#">Thông Tin</a>
+                    <a class="header__item" href="#">Liên hệ</a>
+                    <a class="header__item" href="#">Đăng Nhập</a>
+                    <a class="header__item" href="#">Đăng Ký</a>
+                    <a class="header__item" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                 </div>
+            </div>
+        </nav>
+        <div class="container">
+
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+    <script>
+        const line = document.querySelector('.line');
+        const items = document.querySelectorAll('.header__item');
+        const itemActive = document.querySelector('.header__item.active');
+       
+
+        line.style.left = itemActive.offsetLeft + "px";
+        line.style.width = itemActive.offsetWidth + "px";
+
+        items.forEach((item, index) => {
+        item.onclick = function () {
+        itemActive.classList.remove("active");
+        line.style.left = this.offsetLeft + "px";
+        line.style.width = this.offsetWidth + "px";
+        this.classList.add("active")
+    }
+});
+    </script>
 </body>
 </html>
