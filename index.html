@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./src/css/grid.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/home/product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
     <title>Mixue</title>
 </head>
 <body>
@@ -36,30 +38,226 @@
                  </div>
             </div>
         </nav>
+        <!-- Nav Container -->
+        <div class="nav__container">
+            <div class="mySlides fade">
+              <img src="./src/img/home/slideshow2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="./src/img/home/slideshow1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="./src/img/home/slideshow3.jpg" style="width:100%">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         <div class="container">
-
+          <!-- Slide Container -->
+            <div class="slider__container">
+            <div class="slider__container-title">
+                GIỚI THIỆU SẢN PHẨM
+            </div>
+            <div class="slider__container-images">
+                <div class="slider__container-item" style="--i: 1">
+                    <img src="./src/img/home/product_1.png">
+                </div>
+                <div class="slider__container-item" style="--i: 2">
+                    <img src="./src/img/home/product_2.png">
+                </div>
+                <div class="slider__container-item" style="--i: 3">
+                    <img src="./src/img/home/product_3.png">
+                </div>
+                <div class="slider__container-item" style="--i: 4">
+                    <img src="./src/img/home/product_4.png">
+                </div>
+                <div class="slider__container-item" style="--i: 5">
+                    <img src="./src/img/home/product_5.png">
+                </div>
+                <div class="slider__container-item" style="--i: 6">
+                    <img src="./src/img/home/product_6.png">
+                </div>
+            </div>
+            <div class="slider__container-content">
+                <div class="slider__container-item active">
+                    <h1>TRÀ ĐÀO</h1>
+                    <div class="slider__container-des">
+                        Thức uống ngon tuyệt được ưa thích của Mixue Trà đào
+                            thêm thạch dừa và lô hội giòn dai sần sật, uống 1 ngụm tỉnh người.
+                    </div>
+                </div>
+                <div class="slider__container-item">
+                    <h1>KEM DÂU TÂY</h1>
+                    <div class="slider__container-des">
+                        Kem tươi béo ngậy mát lạnh hoà quyện cùng với mứt dâu tây nguyên quả. 
+                        Là 1 trong những loại kem BÁN CHẠY NHẤT tại cửa hàng.
+                    </div>
+                </div>
+                <div class="slider__container-item">
+                    <h1>TRÀ VIỆT QUẤT</h1>
+                    <div class="slider__container-des">
+                        Siro có cả quả việt quất tạo nên hương vị đặc việt của đồ uống.
+                        Tạo cho khách hàng cảm giác mát lạnh, sảng khoái
+                    </div>
+                </div>
+                <div class="slider__container-item">
+                    <h1>KEM ỐC QUẾ</h1>
+                    <div class="slider__container-des">
+                        Hương vị đặc biệt, vừa tươi vừa ngậy 
+                        nhưng lại có độ ngọt vừa vặn khiến người ta phải ăn cùng
+                            lúc 2-3 cái, dẫn đến việc sợ… tăng cân
+                    </div>
+                </div>
+                <div class="slider__container-item">
+                    <h1>TRÀ CHANH</h1>
+                    <div class="slider__container-des">
+                        Thức uống ngon tuyệt được ưa thích của Mixue Trà chanh
+                        thêm thạch dừa và lô hội giòn dai sần sật, uống 1 ngụm tỉnh người.
+                    </div>
+                </div>
+                <div class="slider__container-item">
+                    <h1>TRÀ DÂU TÂY</h1>
+                    <div class="slider__container-des">
+                    Vị béo thơm của kem đặc, sữa tươi kết hợp cùng syrup dâu
+                    và dâu tây tươi chín mọng mang đến hương vị thức uống vô
+                        cùng đặc biệt, chinh phục khẩu vị của bất kì thực khách khó tính nào ngay từ lần đầu thưởng thức.
+                    </div>
+                </div>
+            </div>
+            <button id="slidePrev"><</button>
+            <button id="slideNext">></button>
+            </div>
+            <!-- PRODUCT  HOT-->
+            <div class="product__hot">
+                <div class="grid wide">
+                    <h1 class="product__hot-h1">ĐỒ UỐNG NỔI BẬT</h1>
+                    <div class="row product__list">
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_1.jpg" alt="" class="product__img">
+                                <h2 class="product__name">KIWI CHUA NGỌT</h2>
+                                <p class="product__price">22.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_2.jpg" alt="" class="product__img">
+                                <h2 class="product__name">SUNDAE CAM LỐC XOÀI</h2>
+                                <p class="product__price">25.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_3.jpg" alt="" class="product__img">
+                                <h2 class="product__name">TRÀ SỮA TRÂN CHÂU</h2>
+                                <p class="product__price">25.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_4.jpg" alt="" class="product__img">
+                                <h2 class="product__name">SUNDAE TRÂN CHÂU</h2>
+                                <p class="product__price">25.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_5.jpg" alt="" class="product__img">
+                                <h2 class="product__name">KEM ỐC QUẾ</h2>
+                                <p class="product__price">10.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 product_list">
+                            <div class="notifications"></div>
+                            <div class="product__item">
+                                <img src="./src/img/home/product_6.jpg" alt="" class="product__img">
+                                <h2 class="product__name">TRÀ ĐÀO</h2>
+                                <p class="product__price">25.0000đ</p>
+                                <div class="buttons">
+                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
-
+            <div class="grid wide">
+                <img src="./image/logo1.jpg" alt="">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
         </footer>
     </div>
-    <script>
-        const line = document.querySelector('.line');
-        const items = document.querySelectorAll('.header__item');
-        const itemActive = document.querySelector('.header__item.active');
-       
-
-        line.style.left = itemActive.offsetLeft + "px";
-        line.style.width = itemActive.offsetWidth + "px";
-
-        items.forEach((item, index) => {
-        item.onclick = function () {
-        itemActive.classList.remove("active");
-        line.style.left = this.offsetLeft + "px";
-        line.style.width = this.offsetWidth + "px";
-        this.classList.add("active")
-    }
-});
-    </script>
+    <script src="./src/js/home/index.js"></script>
+    <script src="./src/js/home/slideContainer.js"></script>
+    <script src="./src/js/home/toast.js"></script>
 </body>
 </html>
