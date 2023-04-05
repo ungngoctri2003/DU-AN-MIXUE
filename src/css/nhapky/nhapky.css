@@ -1,12 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" sans-serif ;
-}
-body{
-    background: #dfe9f5;
-}
+
 .wrapper{
     width: 500px;
     height: 550px;
@@ -17,12 +9,12 @@ body{
     text-align: center;
     box-shadow: 0 20px 35px rgba(0, 0 , 0, 0.1);
 }
-h1{
+.wrapper> h1{
     font-size: 3rem;
     color: #07001f;
     margin-bottom: 1.2rem;
 }
-form input{
+.wrapper input{
     width: 92%;
     outline: none;
     border: 10px solid#fff;
@@ -32,7 +24,7 @@ form input{
     background: #e4e4e4;
     margin-bottom: 5px;
 }
-button{
+.wrapper button{
     font-size: 1rem;
     margin-top: 2rem;
     padding: 10px 0;
@@ -42,9 +34,6 @@ button{
     width: 90%;
     color: #fff;
     cursor: pointer;
-}
-.btn0{
-    background-color: #252a2b;
 }
 input:focus{
     border: 1px solid rgb(192, 192,192);
