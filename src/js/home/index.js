@@ -8,7 +8,6 @@ showSlides(slideIndex += n);
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    console.log(slides)
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1;
@@ -27,19 +26,19 @@ function showSlides(n) {
 }
 
 // Line
-let line = document.querySelector('.line');
-const items = document.querySelectorAll('.header__item');
-const itemActive = document.querySelector('.header__item.active');
+// let line = document.querySelector('.line');
+// const items = document.querySelectorAll('.header__item');
+// const itemActive = document.querySelector('.header__item.active');
 
-line.style.left = itemActive.offsetLeft + "px";
-line.style.width = itemActive.offsetWidth + "px";
+// line.style.left = itemActive.offsetLeft + "px";
+// line.style.width = itemActive.offsetWidth + "px";
 
-items.forEach((item, index) => {
-item.onclick = function () {
-itemActive.classList.remove("active");
-line.style.left = this.offsetLeft + "px";
-line.style.width = this.offsetWidth + "px";
-this.classList.add("active")
-}
-});
+// items.forEach((item, index) => {
+// item.onclick = function () {
+// itemActive.classList.remove("active");
+// line.style.left = this.offsetLeft + "px";
+// line.style.width = this.offsetWidth + "px";
+// this.classList.add("active")
+// }
+// });
 
