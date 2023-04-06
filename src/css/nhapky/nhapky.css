@@ -1,7 +1,6 @@
 
 .wrapper{
     width: 500px;
-    height: 550px;
     padding: 2rem 1rem;
     margin : 100px auto;
     background-color: #fff;
@@ -11,22 +10,51 @@
 }
 .wrapper> h1{
     font-size: 4rem;
-    color: #07001f;
+    color: var(--text-color);
     margin-bottom: 1.2rem;
+    margin-bottom: 50px;
 }
-.wrapper input{
-    width: 92%;
+.form__container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    gap: 7px;
+    position: relative;
+  }
+  
+  .form__container .label {
+    font-size: 1.8rem;
+    padding-left: 10px;
+    position: absolute;
+    top: -22px;
+    left: -6px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .form__container .input {
+    height: 45px;
+    border: none;
     outline: none;
-    border: 10px solid#fff;
-    padding: 15px 20px;
-    border-bottom: 10px;
-    border-radius: 20px;
-    background: #e4e4e4;
-    margin-bottom: 5px;
-}
-.wrapper button{
+    padding: 0px 7px;
     font-size: 2rem;
-    margin-top: 2rem;
+    border-radius: 6px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px #e30558,
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+  
+  .form__container .input:focus {
+    border: 2px solid transparent;
+    color: #333;
+    box-shadow: 3px 3px 10px #e30558,
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px #e30558,
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  }
+  .wrapper button{
+    font-size: 2rem;
+    margin-top: 1rem;
     padding: 10px 0;
     border-radius: 20px;
     outline: none;
@@ -34,15 +62,15 @@
     width: 90%;
     color: #fff;
     cursor: pointer;
-}
-input:focus{
-    border: 1px solid rgb(192, 192,192);
-}
+  }
 .terms input{
     height: 1rem;
     width: 1rem;
     vertical-align: middle;
     cursor: pointer;
+}
+.recover {
+    margin-top: 20px;
 }
 .terms{
     margin-top: 10px;
@@ -52,9 +80,12 @@ input:focus{
     font-size: 1.5rem;
 }
 .terms a{
-    
     color: rgb(17,107,143);
     text-decoration: none;
+}
+.member__span {
+    display: block;
+    margin: 30px 0;
 }
 .member{
     font-size: 1.5rem;

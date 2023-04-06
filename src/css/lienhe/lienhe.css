@@ -1,0 +1,29 @@
+.container__phone {
+    margin-top: 50px;
+}
+.phone__h1 {
+    text-align: center;
+}
+.btn__phone {
+    display: flex;
+    margin: auto ;
+}
+.phone_list {
+    margin-top: 120px;
+    list-style: none;
+}
+.phone__item {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 12px;
+}
+.phone-icon-active {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: var(--red-color);
+}
+.phone-icon {
+    font-size: 3rem;
+    color: var(--red-color);
+    margin-right: 20px;
+}

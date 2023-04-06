@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./src/css/reponsive.css">
     <link rel="stylesheet" href="./src/css/nhapky/nhapky.css">
     <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/lienhe/lienhe.css">
 </head>
 <body>
     <div class="app">
@@ -38,35 +39,53 @@
                  </div>
             </div>
         </nav>
-        <div class="wrapper">
-            <h1>ĐĂNG NHẬP</h1>
-            <form class="form__container" action="#">
-                <input class="input" type="text">
-                <label class="label">Gmail</label>
-            </form>
-            <form class="form__container">
-                <input class="input" type="password">
-                <label class="label">Mật khẩu</label>
-            </form>
-            <button id="login" class="btn">Đăng nhập</button>
-            <div class="member">
-                <div class="recover">
-                    <a href="./quenmatkhau.html">Quên mật khẩu?</a>
+        <!-- Container -->    
+        <div class="container__phone">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <h1 class="phone__h1">GỬI TIN NHẮN CHO CHÚNG TÔI</h1>
+                        <form class="form__container" action="#">
+                            <input class="input" type="text">
+                            <label class="label">Họ tên*</label>
+                        </form>
+                        <form class="form__container" action="#">
+                            <input class="input" type="text">
+                            <label class="label">Email*</label>
+                        </form>
+                        <form class="form__container" action="#">
+                            <input class="input" type="text">
+                            <label class="label">Điện thoại*</label>
+                        </form>
+                        <form class="form__container" action="#">
+                            <input class="input" type="text">
+                            <label class="label">Địa chỉ*</label>
+                        </form>
+                        <form class="form__container" action="#">
+                            <input class="input" type="text">
+                            <label class="label">Nhập nội dung*</label>
+                        </form>
+                        <button id="phone" class="btn btn__phone">Gửi liên hệ</button>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <ul class="phone_list">
+                            <li class="phone-icon-active">Địa chỉ</li>
+                            <li class="phone__item">
+                                <i class="phone-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li class="phone__item"><i class="phone-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li class="phone__item"><i class="phone-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li class="phone__item"><i class="phone-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li class="phone__item"><i class="phone-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <span class="member__span">
-                    Bạn chưa có tài khoản? <a href="./dangki.html">Đăng kí tại đây</a>
-                </span>
-                
-                <div class="member1">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <a href="./index.html">Quay lại trang chủ</a>
-                </div>
-            </div>
-            
-        </div>
         <div class="notifications"></div>
-        <!-- footer -->
-        <footer>
+            </div>
+        </div>
+        <!-- Footer -->
+            <footer>
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-4 m-4 c-12">

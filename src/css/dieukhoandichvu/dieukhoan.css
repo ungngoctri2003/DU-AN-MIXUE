@@ -1,0 +1,10 @@
+.container__service {
+    margin-top: 30px;
+}
+.container__service-h2 {
+    font-size: 2rem;
+    color: var(--red-color);
+}
+.container__service-p {
+    font-size: 1.5rem;
+}

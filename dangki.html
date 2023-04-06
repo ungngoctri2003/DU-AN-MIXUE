@@ -26,31 +26,41 @@
                     <img src="./src/img/home/logo.png" alt="" class="header__logo">
                 </a>
                 <div class="header__list">
-                    <a class="header__item " href="./index.html">Home</a>
-                    <a class="header__item" href="#">Sản Phẩm</a>
-                    <a class="header__item" href="#"> Tin Tức</a>
-                    <a class="header__item" href="#">Sự Kiện</a>
-                    <a class="header__item" href="#">Thông Tin</a>
-                    <a class="header__item" href="#">Liên hệ</a>
-                    <a class="header__item" href="./dangnhap.html">Đăng Nhập</a>
-                    <a class="header__item" href="./dangki.html">Đăng Ký</a>
-                    <a class="header__item" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="#"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="#"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="#"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="#"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                    <a class="header__item cta" href="#"><span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span></a>
                  </div>
             </div>
         </nav>
         <div class="wrapper">
-            <h1>ĐĂNG KÍ</h1>
-            <form action="#">
-                <input type="text" placeholder="Họ tên">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Mật khẩu">
-                <input type="text" placeholder="Số điện thoại">
+            <h1>ĐĂNG KÝ</h1>
+            <form class="form__container" action="#">
+                <input class="input" type="text">
+                <label class="label">Họ tên</label>
+            </form>
+            <form class="form__container">
+                <input class="input" type="text">
+                <label class="label">Email</label>
+            </form>
+            <form class="form__container">
+                <input class="input" type="password">
+                <label class="label">Mật khẩu</label>
+            </form>
+            <form class="form__container" action="#">
+                <input class="input" type="text">
+                <label class="label">Số điện thoại</label>
             </form>
             <div class="terms">
                 <input type="checkbox" id="checkbox">
-                <label for="checkbox">Tôi đồng ý <a href="#">Điều khoản & dịch vụ</a></label>
+                <label for="checkbox">Tôi đồng ý <a href="./dieukhoandichvu.html">Điều khoản & dịch vụ</a></label>
             </div>
-            <button id="logout" class="btn btn1">ĐĂNG KÍ</button>
+            <button id="logout" class="btn btn1">ĐĂNG KÝ</button>
             <div class="member">
                 Bạn đã có tài khoản? <a href="./dangnhap.html">Đăng nhập tại đây</a>
             </div>
