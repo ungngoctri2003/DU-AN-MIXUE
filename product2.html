@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./src/css/grid.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/reponsive.css">
-    <link rel="stylesheet" href="./src/css/home/product.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
     <link rel="stylesheet" href="./src/css/home/toast.css">
     <title>Mixue</title>
 </head>
@@ -34,10 +34,42 @@
                     <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
                     <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
                     <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
-                    <a class="header__item cta" href="#"><span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span></a>
                  </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </nav>
+        <!-- Container -->
         <div class="container__product">
             <div class="grid wide">
                 <div class="row ">
@@ -47,96 +79,118 @@
                                 ICE - CREAM & TEA
                             </a>
                             <a href="./product1.html" class="container__product-item">
-                                TRÀ HOA QUẢ THẬT
+                                TRÀ HOA QUẢ
                             </a>
                             <a href="./product2.html" class="container__product-item">
-                                TRÀ SỮA THẬT
+                                TRÀ SỮA
                             </a>
                         </div>
                     </div>
                     <div class="col l-9 m-9 c-10">
-                        <div class="row product__list">
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa bá vương.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA BÁ VƯƠNG</h2>
-                                    <p class="product__price">30.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
+                        <section class="wrapper">
+                            <div class="products">
+                                <div class="wide grid">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa bá vương.jfif"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA BÁ VƯƠNG</h3>
+                                                    <div class="price">
+                                                        <span class="money">30000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa nướng.jfif"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA NƯỚNG</h3>
+                                                    <div class="price">
+                                                        <span class="money">25000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa 3Q.jfif"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA 3Q</h3>
+                                                    <div class="price">
+                                                        <span class="money">25000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa thạch dừa.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA THẠCH DỪA</h3>
+                                                    <div class="price">
+                                                        <span class="money">25000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa trân châu.jfif"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA TRÂN CHÂU</h3>
+                                                    <div class="price">
+                                                        <span class="money">25000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="main-product">
+                                                <div class="img-product">
+                                                    <img class="img-prd"
+                                                        src="./src/img/SanPham/trà sữa 2J.jfif"
+                                                        alt="">
+                                                </div>
+                                                <div class="content-product">
+                                                    <h3 class="content-product-h3">TRÀ SỮA 2J</h3>
+                                                    <div class="price">
+                                                        <span class="money">25000đ</span>
+                                                    </div>
+                                                    <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa nướng.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA NƯỚNG</h2>
-                                    <p class="product__price">25.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa 3Q.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA 3Q</h2>
-                                    <p class="product__price">25.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa thạch dừa.jpg" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA THẠCH DỪA</h2>
-                                    <p class="product__price">25.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa trân châu.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA TRÂN CHÂU</h2>
-                                    <p class="product__price">25.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà sữa 2J.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ SỮA 2J</h2>
-                                    <p class="product__price">20.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trân châu đường đen đá xay mixue.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÂN CHÂU ĐƯỜNG ĐEN</h2>
-                                    <p class="product__price">20.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col l-4 m-6 c-12">
-                                <div class="product__item">
-                                    <img src="./src/img/SanPham/trà kem bốn mùa.jfif" alt="" class="product__img">
-                                    <h2 class="product__name">TRÀ KEM BỐN MÙA</h2>
-                                    <p class="product__price">25.0000đ</p>
-                                    <div class="buttons">
-                                        <button class="btn product__btn" id="success">Mua hàng</button>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -188,6 +242,7 @@
             </div>
         </footer>
     </div>
+    <script src="./src/js/cart/cart.js"></script>
     <script src="./src/js/home/toast.js"></script>
 </body>
 </html>

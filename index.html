@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="./src/css/grid.css">
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/reponsive.css">
-    <link rel="stylesheet" href="./src/css/home/product.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
     <link rel="stylesheet" href="./src/css/home/toast.css">
     <title>Mixue</title>
 </head>
 <body>
     <div class="app">
         <!-- Header -->
-         <nav>
+        <nav>
             <div class="grid wide header">
                 <a href="./index.html">
                     <img src="./src/img/home/logo.png" alt="" class="header__logo">
@@ -34,8 +34,39 @@
                     <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
                     <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
                     <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
-                    <a class="header__item cta" href="#"><span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span></a>
                  </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
             </div>
         </nav>
         <!-- Nav Container -->
@@ -138,71 +169,110 @@
             </div>
             <!-- PRODUCT  HOT-->
             <div class="product__hot">
-                <div class="grid wide">
-                    <h1 class="product__hot-h1">ĐỒ UỐNG NỔI BẬT</h1>
-                    <div class="row product__list">
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_1.jpg" alt="" class="product__img">
-                                <h2 class="product__name">KIWI CHUA NGỌT</h2>
-                                <p class="product__price">22.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                <section class="wrapper">
+                    <div class="products">
+                        <div class="wide grid">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_1.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">KIWI CHUA NGỌT</h3>
+                                            <div class="price">
+                                                <span class="money">25000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_2.jpg" alt="" class="product__img">
-                                <h2 class="product__name">SUNDAE CAM LỐC XOÀI</h2>
-                                <p class="product__price">25.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_2.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">SUNDAE CAM LỐC XOÀI</h3>
+                                            <div class="price">
+                                                <span class="money">25000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_3.jpg" alt="" class="product__img">
-                                <h2 class="product__name">TRÀ SỮA TRÂN CHÂU</h2>
-                                <p class="product__price">25.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_3.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">TRÀ SỮA TRÂN CHÂU</h3>
+                                            <div class="price">
+                                                <span class="money">25000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_4.jpg" alt="" class="product__img">
-                                <h2 class="product__name">SUNDAE TRÂN CHÂU</h2>
-                                <p class="product__price">25.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_4.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">SUNDAE TRÂN CHÂU</h3>
+                                            <div class="price">
+                                                <span class="money">25000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_5.jpg" alt="" class="product__img">
-                                <h2 class="product__name">KEM ỐC QUẾ</h2>
-                                <p class="product__price">10.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_5.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">KEM ỐC QUẾ</h3>
+                                            <div class="price">
+                                                <span class="money">25000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <div class="product__item">
-                                <img src="./src/img/home/product_6.jpg" alt="" class="product__img">
-                                <h2 class="product__name">TRÀ ĐÀO</h2>
-                                <p class="product__price">25.0000đ</p>
-                                <div class="buttons">
-                                    <button class="btn product__btn" id="success">Mua hàng</button>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="./src/img/home/product_6.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">TRÀ ĐÀO</h3>
+                                            <div class="price">
+                                                <span class="money">20000đ</span>
+                                            </div>
+                                            <button id="success" type="button" class="btn btn-cart">MUA NGAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             <div class="notifications"></div>
         </div>
@@ -253,5 +323,6 @@
     <script src="./src/js/home/index.js"></script>
     <script src="./src/js/home/slideContainer.js"></script>
     <script src="./src/js/home/toast.js"></script>
+    <script src="./src/js/cart/cart.js"></script>
 </body>
 </html>
