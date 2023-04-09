@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/event/event.css">
+    <title>Mixue</title>    
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="./index.html">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                 </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+            <div class="event__container">
+                <div class="event__item">
+                    <div class="event__info">
+                        <img src="./src/img/Event/event_logo.jpg" alt="" class="event__logo">
+                        <div class="event__wrap">
+                            <h3 class="event__name">MIXUE</h3>
+                            <p class="event__time">30 Tháng 3 lúc 15:43
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event__content">
+                        🤩BÙNG NỔ VITAMIN C VỚI TRÀ Ô LONG KIWI<br>
+                        🥝Kiwi chua ngọt nhiều thịt quả<br>
+                        🥝Thạch dừa giòn dai ngon miệng<br>
+                        🥝Trà ô long thơm mát đậm vị <br>
+                        👉Hiện Trà ô long Kiwi đã bắt đầu được mở bán tại một số cửa hàng và sẽ có mặt đầy đủ tại tất cả các cửa hàng MIXUE trên toàn quốc kể từ ngày 7/4/2023.<br>
+                    </div>
+                    <div class="event__list">
+                        <div style="background-image: url('/src/img/Event/event2_1.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event2_2.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event2_3.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event2_4.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event2_5.jpg');" class=""></div>
+                    </div>
+                </div>
+                <div class="event__item">
+                    <div class="event__info">
+                        <img src="./src/img/Event/event_logo.jpg" alt="" class="event__logo">
+                        <div class="event__wrap">
+                            <h3 class="event__name">MIXUE</h3>
+                            <p class="event__time">21 Tháng 3 lúc 19:59
+                        </div>
+                        </p>
+                    </div>
+                    <div class="event__content">
+                        ❗️MIXUE CÔNG BỐ GIÁ BÁN ĐỒ LƯU NIỆM<br>
+                        👉Chi tiết giá xin vui lòng xem ở ảnh phía dưới<br>
+                        👉Tất cả các cửa hàng MIXUE trên toàn Việt Nam đều sẽ bán đồ lưu niệm theo giá đã công
+                         bố, kể từ 21/3/2023 bất kỳ khách hàng nào mua hàng với giá đắt hơn xin vui lòng inbox cho <br>
+                        Fanpage MIXUE để được đền bù đúng với quyền lợi.<br>
+                    </div>
+                    <div class="event__list">
+                        <div style="background-image: url('/src/img/Event/event1_1.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event1_2.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event1_3.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event1_4.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event1_5.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event1_6.jpg');" class=""></div>
+                    </div>
+                </div>
+                <div class="event__item">
+                    <div class="event__info">
+                        <img src="./src/img/Event/event_logo.jpg" alt="" class="event__logo">
+                        <div class="event__wrap">
+                            <h3 class="event__name">MIXUE</h3>
+                            <p class="event__time">7 Tháng 3 lúc 21:05
+                        </div>
+                        </p>
+                    </div>
+                    <div class="event__content">
+                        MỒNG 8 THÁNG 3 ĐẾN MIXUE NHẬN 🌷<br>
+                        👉Bạn nữ nào đến MIXUE mua đồ uống bất kỳ (trừ kem ốc quế) đều được tặng 1 bông 🌷 gắn cốc!<br>
+                        🕑Thời gian: 7-8/3/2023<br>
+                        📍Địa điểm áp dụng: Các cửa hàng có treo dán poster chương trình<br>
+                    </div>
+                    <div class="event__list">
+                        <div style="background-image: url('/src/img/Event/event3_1.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event3_2.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event3_3.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event3_4.jpg');" class=""></div>
+                    </div>
+                </div>
+                <div class="event__item">
+                    <div class="event__info">
+                        <img src="./src/img/Event/event_logo.jpg" alt="" class="event__logo">
+                        <div class="event__wrap">
+                            <h3 class="event__name">MIXUE</h3>
+                            <p class="event__time">3 Tháng 3 lúc 14:03
+                        </div>
+                        </p>
+                    </div>
+                    <div class="event__content">
+                        Cùng đón chờ chương trình tặng Lật đật Tuyết Vương vào ngày 4-5/3/2023 nhé! ❤ MIXUE Ice Cream & Tea - Mật tuyết đến từ trái tim❤<br>
+                        🏠Danh sách cửa hàng MIXUE: https://bit.ly/3dhBDct<br>
+                        Hotline nhượng quyền:<br>
+                        ☎024.6666.2111<br>
+                        ☎0382.099.811<br>
+                    </div>
+                    <div class="event__list">
+                        <div style="background-image: url('/src/img/Event/event4_1.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event4_2.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event4_3.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event4_4.jpg');" class=""></div>
+                    </div>
+                </div>
+                <div class="event__item">
+                    <div class="event__info">
+                        <img src="./src/img/Event/event_logo.jpg" alt="" class="event__logo">
+                        <div class="event__wrap">
+                            <h3 class="event__name">MIXUE</h3>
+                            <p class="event__time">13 Tháng 2 lúc 16:03
+                        </div>
+                        </p>
+                    </div>
+                    <div class="event__content">
+                        💝💝💝CHỈ VỚI 50K, CÓ NGAY QUÀ VALENTINE Ý NGHĨA TẶNG NGƯỜI YÊU<br>
+                        👉MUA HOÁ ĐƠN TỪ 50K NHẬN NGAY 2 SỔ CHỨNG NHẬN TÌNH YÊU MIỄN PHÍ<br>
+                        👉Thời gian: 11-14/2/2023<br>
+                        👉Địa điểm áp dụng: Cửa hàng MIXUE toàn quốc. Danh sách cửa hàng: https://bit.ly/3dhBDct<br>
+                    </div>
+                    <div class="event__list">
+                        <div style="background-image: url('/src/img/Event/event5_1.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event5_2.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event5_3.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event5_4.jpg');" class=""></div>
+                        <div style="background-image: url('/src/img/Event/event5_5.jpg');" class=""></div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/thongtin/thongtin.css">
+    <title>Mixue</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="./index.html">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                 </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div class="information__container">
+            <div class="grid wide">
+                <h1 class="information__heading">
+                    Câu Chuyện Đằng Sau Mixue Ice Cream & Tea Là Gì?
+                </h1>
+                <p class="information__text">
+                    Năm 1997, anh Zhang Hongchao, một sinh viên đại học, đã khai trương Mixue Ice Cream & Tea tại Trịnh Châu - một hành trình suốt đời mang kem và trà tươi dành
+                     cho giới trẻ. Anh ấy đặt ra sứ mệnh “mang đến những sản phẩm chất lượng cao và giá cả phải chăng cho mọi người trên khắp thế giới”. Đừng bao giờ quên lý do
+                      tại sao anh ấy bắt đầu và sau hơn một thập kỷ trải qua bao thăng trầm, anh ấy đã dẫn dắt Mixuers xây dựng thành công nhà máy và chuỗi cung ứng của riêng
+                       mình. Bây giờ chúng tôi có thể sản xuất các thành phần cốt lõi một cách độc lập. Để đảm bảo chất lượng của từng ly kem và tách trà, thương hiệu Mixue Ice
+                    Cream & Tea được hỗ trợ bởi Mixue Bingcheng Co., Ltd. về quản lý và vận hành, Henan Daka Food Co., Ltd. về R&D và sản xuất, và Shangdao Công ty TNHH Chuỗi cung ứng thông minh về dịch vụ kho bãi và hậu cần. Một chuỗi công nghiệp hoàn chỉnh được hình thành để bảo vệ và thúc đẩy sự phát triển của Mixue Ice Cream & Tea!
+                </p>
+                <img class="information__text-img" src="./src/img/thongtin/2856578039.jpg" alt="">
+                <div class="information__text-caption">Hình ảnh ông Zhang Hongchao người sáng lập ra Mixue</div>
+                <h1 class="information__heading">
+                    VĂN HÓA MIXUE
+                </h1>
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/1.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Những giá trị cốt lõi</p>
+                                <p class="text">Cung cấp sản phẩm đích thực bằng sự chân thật và tận tâm. Không có phím tắt, không có lừa dối </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/2.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Tầm nhìn công ty</p>
+                                <p class="text">Ngắn gọn và tận tâm, chúng tôi cố gắng trở thành 1 doanh nghiệp đáng kính phát triển mạnh hơn 100 năm </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/3.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Sứ mệnh lịch sử</p>
+                                <p class="text">Tăng cường thương hiệu của chúng tôi.Làm giàu cho các đối tác của chúng tôi. Mang sản phẩm chất lượng cao và giá cả phải chăng đến mọi người trên khắp thế giới. </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/4.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Nguyên tắc kinh doanh</p>
+                                <p class="text">Người gần bao gồm niềm vui lớn. Người xa không nhìn thấy khoảng cách. Định hướng phấn đấu. Lấy khách hàng làm trung tâm </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/5.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Đối tác tinh thần</p>
+                                <p class="text">Chính trực, hòa nhã, đam mê, chủ động </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/6.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">
+                                    Quy tắc ứng xử
+                                </p>
+                                <p class="text">Địa điểm thực, việc thực, tình huống thực.Giữ vững sự thống nhất giữa kiến ​​thức và thực tiễn.  Đi đầu về mọi mặt.Sự thấu đáo làm nên điều bình thường phi thường.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/7.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Triết lý nhân tài</p>
+                                <p class="text">Đánh giá cao từng tài năng - bất kể nền tảng.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="information__item">
+                            <div class="information__item-img">
+                                <img src="./src/img/thongtin/8.png" class="information__item-dec">
+                            </div>
+                            <div class="information__item-text">
+                                <p class="title">Khẩu lệnh</p>
+                                <p class="text">Anh Yêu Em.Bạn yêu tôi.Trộn kem và trà </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <h1 class="information__heading">
+                    CÁC CÂU HỎI THƯỜNG GẶP
+                </h1>
+                <div class="question__list">
+                    <div class="question__item">
+                      <div class="question">
+                        <div class="text">
+                            Nhượng quyền thương mại Mixue hoạt động như thế nào?
+                        </div>
+                        <div class="dropdown">></div>
+                      </div>
+                      <div class="answer">
+                        Mixue Ice Cream & Tea là một thương hiệu nhượng quyền dựa trên cửa hàng.Bên nhận quyền
+                         chịu mọi chi phí và không trả bất kỳ khoản hoa hồng nào cho công ty mẹ.Điều này cho phép
+                          công ty quản lý tất cả các thị trường đang hoạt động và thiết lập một cơ chế thị trường
+                           tiêu chuẩn hóa và minh bạch. Tính nhất quán của cửa hàng được đảm bảo theo cách này và
+                           những người được nhượng quyền có nhiều sự linh hoạt hơn.
+  
+                      </div>
+                    </div>
+                
+                    <div class="question__item">
+                      <div class="question">
+                        <div class="text">
+                            Tôi cần những chứng chỉ nào để mở cửa hàng?
+                        </div>
+                        <div class="dropdown">></div>
+                      </div>
+                      <div class="answer">
+                        Vui lòng tham khảo chính quyền địa phương về các chứng chỉ cần thiết.Chúng tôi có thể cung cấp các tài liệu hỗ trợ theo yêu cầu.Các chứng chỉ cần có:
+                        <br>1. Giấy khám sức khỏe: cần thiết cho nhân viên cửa hàng.Vui lòng nộp hồ sơ tại các tổ chức y tế có liên quan như trung tâm phòng chống dịch bệnh, trung tâm kiểm soát dịch bệnh hoặc bệnh viện địa phương; <br>
+                        2. Giấy phép kinh doanh: vui lòng mang hợp đồng thuê nhà đến Hội trường Dịch vụ Thương mại và Công nghiệp tại địa phương để nộp hồ sơ;<br>
+                        3. Giấy phép Dịch vụ Ăn uống/Thực phẩm: có được MỘT giấy phép theo các yêu cầu vệ sinh thực phẩm địa phương theo lời khuyên của Phòng Dịch vụ Công nghiệp và Thương mại của bạn;<br>
+                        * Đăng ký trực tuyến hoặc tại Phòng Dịch vụ Công nghiệp và Thương mại của bạn. 
+                      </div>
+                    </div>
+                
+                    <div class="question__item">
+                      <div class="question">
+                        <div class="text">Đồ uống ở đây ra sao?</div>
+                        <div class="dropdown">></div>
+                      </div>
+                      <div class="answer">
+                        Thực đơn tại MIXUE rất phong phú và đa dạng, được chia làm 3 loại chính bao gồm: Kem, Cafe và Trà sữa và Nước hoa quả tươi.<br>
+                        Đồ uống tại MIXUE mang rất nhiều nét đặc trưng mà không ở đâu có được, với nguyên liệu tươi ngon mỗi ngày, MIXUE luôn mang đến 
+                        trải nghiệm vô cùng thú vị. Chỉ với khoảng giá bình dân từ 10 nghìn đồng là bạn đã có trong tay một cây kem tươi tại MIXUE rồi đó.
+                      </div>
+                    </div>
+                    <div class="question__item">
+                        <div class="question">
+                          <div class="text">Đến MIXUE uống gì ngon nhất?</div>
+                          <div class="dropdown">></div>
+                        </div>
+                        <div class="answer">
+                            Hệ thống MIXUE với 5 vị trà sữa truyền thống bao gồm: Trà sữa đậu đỏ, Trà sữa yến mạch, Trà sữa thạch dừa, 
+                            Trà sữa pudding, Trà sữa trân châu. Vớ mức giá khá rẻ, chỉ với 25.000 nghìn đồng là bạn đã có cho mình ngay 
+                            một ly trà sữa tại MUXUE ngay rồi đó. Đối với các bạn sinh viên có sở thích và niềm fđam mê với trà sữa thì
+                             đây quả thực là mức giá rất hợp lý cho túi tiền của các bạn.
+                        </div>
+                      </div>
+                      <div class="question__item">
+                        <div class="question">
+                          <div class="text">Thái độ phục vụ của nhân viên?</div>
+                          <div class="dropdown">></div>
+                        </div>
+                        <div class="answer">
+                            Nhân viên ở các cửa hàng cũng rất nhiệt tình và vui vẻ trong việc tư vấn chọn đồ uống cho từng khách hàng.
+                             Đặc khi mỗi khi có sản phẩm mới ra mắt, chác chắn các bạn ấy sẽ không quên phần giới thiệu và hỏi xem khách hàng có muốn dùng thử sản phẩm hay không.<br>
+                            Đặc biệt là nhân viên ở quán khá chu đáo và gọn gàng sạch sẽ, chính vì vậy mà không gian
+                             trong quán luôn được giữ gìn sạch sẽ mặc cho quán khá đông khách. Vì thế luôn tạo cho khách hàng cảm giác thoải mái mỗi khi đến quán.
+                        </div>
+                      </div>
+                      <div class="question__item">
+                        <div class="question">
+                          <div class="text">Chương trình ưu đãi MIXUE</div>
+                          <div class="dropdown">></div>
+                        </div>
+                        <div class="answer">
+                            Với mức giá khá rẻ so với thị trường trà sữa đang bùng nổ như hiện nay, MIXUE vẫn luôn tổ chức rất nhiều các chương trình khuyến mãi siêu khủng, siêu hot dành tặng thường xuyên cho khách hàng.<br>
+                            Những chương trình mua 1 tặng một, hay mua nướng uống bất kì đực tặng kem luôn được MIXUE áp dụng thường xuyên.
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/js/thongtin/thongtin.js"></script>
+</body>
+</html>

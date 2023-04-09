@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/tintuc/tintuc.css">
+    <title>Mixue</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="./index.html">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                 </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div class="grid wide">
+            <div class="app_new">
+                <div class="new__product">
+                    <h1 class="new__product-h1">
+                        Trào lưu 'săn' bình tuyết vương hút giới trẻ, ngoại hình cực bắt mắt nhưng giá thành mới gây bất ngờ
+                    </h1>
+                    <p class="new__item-time">
+                        08-12-2022 - 10:40 AM | Thị trường
+                    </p>
+                    <h2 class="new__item-header">  
+                    Một hãng trà sữa đến từ Trung Quốc đã tung ra chiếc bình đựng kem hình người tuyết khiến giới trẻ thích thú đi săn lùng bởi ngoại hình quá dễ thương và hợp không khí Noel.
+                    </h2>
+                    <p class="new__product-text">
+                        Mixue là hãng đồ uống không còn xa lạ với tín đồ trà sữa và kem tại Việt Nam, đặc biệt là GenZ. Bên cạnh menu phong phú đa dạng với các loại đồ uống như trà sữa, trà hoa quả, kem... thì hãng này đã đưa ra thị trường những chiếc bình đựng kem vô cùng bắt mắt và bất ngờ trở thành một hiện tượng được giới trẻ săn đón.<br>
+
+                        Đây là một chiếc bình nhựa trong suốt và có hình người tuyết đội vương miện – hay còn gọi là bình tuyết vương. Sở dĩ chiếc bình này gây sốt đến vậy là bởi ngoại hình người tuyết rất phù hợp với không khí giáng sinh. Chiếc bình này đã xuất hiện một thời gian và luôn trong tình trạng hết hàng. Bình người tuyết được bán tại các cơ sở của Mixue và khách hàng sẽ dùng để đựng luôn kem hoặc đồ uống của mình. Điểm nhấn của chiếc bình này là có dây đeo chéo kèm theo và có thể đeo thành túi xách – vừa độc lạ và vệ sinh khi mang theo đồ uống.<br>
+                        
+                        Chiếc bình này có giá 35.000 đồng với số lượng rất ít, chính vì vậy nên lại khiến nhiều người càng tò mò và muốn sở hữu.<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new5_1.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">
+                        Chân dung chiếc bình đang làm mưa làm gió trên mạng xã hội
+                    </p>
+                    <img src="./src/img/TinTuc/new5_2.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">
+                        Có thể biến hóa thành túi đeo chéo
+                    </p>
+                    <p class="new__product-text">
+                        Trên mạng xã hội Tik Tok, chiếc bình này đã tạo ra một trend đi "săn" bình tuyết vương để check-in chiếc "túi xách" độc lạ có trà sữa hoặc đồ uống bên trong bởi số lượng tại mỗi cơ sở được bày bán rất hạn chế. Những clip về chiếc bình này thu được hàng trăm nghìn lượt xem và hàng chục nghìn lượt thích, bên dưới những clip này cũng nhận về hàng trăm nghìn bình luận rủ nhau "check-in" và quan tâm.<br>
+                        
+                        Theo chia sẻ từ nhân viên các cửa hàng, chiếc bình này đã xuất hiện được một thời gian. Tuy nhiên sau những clip Tik Tok của các bạn trẻ gần đây thì mặt hàng này mới bắt đầu hot. Trong vòng 10 ngày trở lại đây, những chiếc bình này trên địa bàn Hà Nội thường xuyên hết hàng, phải chờ vài ngày mới có tuy nhiên cũng nhanh chóng hết sau khi được bù hàng. Không chỉ bình nước, hãng cũng bày bán nhiều sản phẩm lưu niệm khác như lật đật mini, móc khóa, bình nhựa tuy nhiên mặt hàng bình tuyết vương này được săn đón nhiệt tình nhất.<br>
+
+                        Mixue vốn nổi tiếng là một thương hiệu đồ uống giá rẻ thị trường Việt Nam, menu đồ uống với khá nhiều sự lựa chọn và giá "mềm" hơn rất nhiều so với mặt bằng chung, dao động trong khoảng 20.000 - 25.000 đồng.<br>
+
+                        Được thành lập vào năm 1997, Mixue đang mở rộng mạng lưới tại Việt Nam và Indonesia, nơi có tổng cộng gần 600 cửa hàng. Tại thị trường Trung Quốc, thương hiệu phủ sóng rộng rãi với gần 21.000 cửa hàng và con số đang tiếp tục tăng. Lí giải vì sao có mức giá rẻ đến giật mình như vậy là bởi chiến lược mua sắm và sản xuất. Mixue có các cơ sở chế biến trung tâm gần các nhà cung cấp đảm nhận tất cả các khâu từ mua hàng, chế biến đến vận chuyển cho người nhận nhượng quyền. Họ có một nhà máy chế biến chanh lớn nằm ở thị trấn Tử Dương, tỉnh Tứ Xuyên, nguồn cung cấp khoảng 80% sản lượng trái cây họ cam quýt của Trung Quốc.<br>
+
+                        Thu nhập từ phí nhượng quyền chỉ chiếm 1,9% doanh thu của Mixue, doanh thu của họ chủ yếu đến từ việc bán nguyên liệu và thiết bị cho các cửa hàng.<br>
+
+                        Chi phí cửa hàng cũng là một yếu tố đóng góp vào sự tăng trưởng của Mixue. Họ thực hiện một cách tiếp cận "mềm" hơn trong tiền thuê, nhân công và các chi phí hoạt động khác. Chuỗi này tập trung các cửa hàng ở các thành phố nhỏ hơn với thu nhập người dân tương đối thấp và hầu hết chỉ phục vụ đồ ăn mang đi.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/tintuc/tintuc.css">
+    <title>Mixue</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="./index.html">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                 </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div class="grid wide">
+            <div class="app_new">
+                <div class="new__product">
+                    <h1 class="new__product-h1">
+                        Trend ăn uống hot nhất hiện nay: Giới trẻ nói sao khi "cơn bão" Mixue đổ bộ khắp các mặt trận?
+                    </h1>
+                    <p class="new__item-time">
+                        09-04-2023 - 07:49 AM | Sống
+                    </p>
+                    <img src="./src/img/TinTuc/new2_1.webp" alt="" class="new__product-img">
+                    <h2 class="new__item-header">
+                        Không chỉ đơn thuần là sản phẩm ăn uống, "cơn bão" Mixue còn tạo nên nhiều trend vô cùng đặc sắc.
+                    </h2>
+                    <p class="new__product-text">
+                        Nếu là một tín đồ ăn uống, hẳn là thời gian gần đây bạn sẽ không thể đứng ngoài "cơn sốt ăn uống" Mixue. Sau khi "đế chế trà sữa" đã chìm dần, có thể nói, rất lâu rồi giới trẻ mới lại "phát sốt" vì một trend ăn uống đến như vậy.
+                    </p>
+                    <h2 class="new__item-header">
+                        Điều gì khiến Mixue hot với giới trẻ như vậy?
+                    </h2>
+                    <p class="new__product-text">
+                        Mixue là một thương hiệu bán kem và các món đồ uống (trà, trà sữa) đang được giới trẻ vô cùng ưa chuộng hiện nay. Dù cũng chỉ là những món đồ uống, món ăn không hề mới lạ như trà, trà sữa hay kem, nhưng quả thật Mixue lại làm nên một "cơn bão" khuynh đảo các tín đồ ăn uống. Vậy thì lý do gì đã làm nên được điều đó?
+                    </p>
+                    <img src="./src/img/TinTuc/new2_2.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">Mixue - "cơn sốt ăn uống" đang khuynh đảo giới trẻ hiện nay (Ảnh: Mixue)</p>
+                    <p class="new__product-text">
+                        Đầu tiên, phải kể đến mức giá của Mixue. Những sản phẩm với mức giá chỉ từ 10k, trung bình cũng chỉ rơi vào khoảng 25k - 35k là một mức giá tạo được ấn tượng mạnh với người tiêu dùng. Mức giá này được đánh giá là rất rẻ so với những sản phẩm tương đương trên thị trường hiện nay.<br>
+
+                        Thứ 2, đó là sự chuyển đổi vô cùng thông minh của thương hiệu này tại thị trường Việt Nam. Ban đầu, Mixue cũng tập trung vào sản phẩm trà sữa, nhưng khi sản phẩm này bắt đầu bão hoà và chìm dần thì Mixue chuyển sang kem tươi, đưa món ăn này trở thành sản phẩm chính. Còn menu trà sữa thì được tinh gọn lại, lấy yếu tố giá rẻ làm điểm mạnh, đánh vào đối tượng học sinh, sinh viên, những người có tiêu chí chọn đồ ăn ngon - bổ - rẻ.<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new2_3.webp" alt="" class="new__product-img">
+                    <img src="./src/img/TinTuc/new2_4.webp" alt="" class="new__product-img">
+                    <img src="./src/img/TinTuc/new2_5.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">Các sản phẩm linh vật của Mixue (Ảnh chụp màn hình TikTok @Ling bơ, @Vitamin Hề)</p>
+                    <p class="new__product-text">
+                        Thứ 3, chính là "cơn bão" mà Mixue đang tạo nên hiện nay, chính là Character Marketing (chiến lược linh vật). Linh vật của Mixue là Snow King, một người tuyết mặc áo choàng và cầm trượng. Mixue đã tạo ra rất nhiều sản phẩm lưu niệm từ linh vật này như bình đựng nước, lật đật, hộp nhạc... Cùng với bản nhạc Mixue đang hot trên mạng xã hội, linh vật này càng được phủ sóng rộng rãi.<br>
+                    </p>
+                    <h2 class="new__item-header">
+                        Các bạn trẻ nói sao về “cơn bão” trend ăn uống mới này?
+                    </h2>
+                    <p class="new__product-text">
+                        Không khó để nhận ra rằng có rất nhiều bạn trẻ rất yêu thích "cơn sốt ăn uống" Mixue này.<br>
+
+                        Huyền Hạnh (23 tuổi, nhân viên thiết kế) chia sẻ: "Mọi người ở chỗ làm của mình rủ nhau đặt kem với trà của Mixue về suốt ngày, giống hồi trước tuần nào cũng uống trà sữa mấy lần ấy. Đứa nào cũng có 1 chiếc bình nước với mấy con lật đật Mixue. Mình thì hay ăn kem, công nhận rẻ mà ngon. Còn đồ uống thì cũng bình thường, không quá đặc sắc".<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new2_6.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">Mixue gây ấn tượng với các món kem (Ảnh: Mixue)</p>
+                    <p class="new__product-text">
+                        Cũng như Hạnh, Thanh Thư (21 tuổi, sinh viên) khá hào hứng khi nhắc đến Mixue: "Sinh viên bọn em thì thích kem với nước Mixue lắm! Vì đúng kiểu ngon - bổ - rẻ mà! Mấy con linh vật cũng đẹp, nhưng nếu 'đu' theo hết bộ linh vật thì đúng là hơi 'viêm màng túi' thật".<br>
+
+                        Riêng với Minh Anh (29 tuổi, nhân viên văn phòng) thì có đánh giá hơi khác một chút: "Thật ra mình thấy các món nước hay kem của Mixue không quá xuất sắc, nhưng nó lại rất phù hợp với giá thành và phù hợp với nhiều đối tượng người tiêu dùng. Mình nghĩ cũng chính vì thế mà Mixue được ưa chuộng. Còn về việc tạo 'cơn sốt' linh vật như hiện nay thì không phải bàn cãi rồi!".<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new2_7.webp" alt="" class="new__product-img">
+                    <p class="new__product-like">Có thể thấy, Mixue gây ấn tượng bởi mức giá rẻ (Ảnh: Mixue)</p>
+                    <p class="new__product-text">
+                        Có thể thấy, điều khiến Mixue gây ấn tượng nhất với giới trẻ hiện nay chính là mức giá rẻ cùng những yếu tố trend linh vật thú vị. Hơn nữa, chính thương hiệu này còn "bắt trend" TikTok tạo nên bài nhạc viral cùng điệu nhảy đẹp mắt.<br>
+
+                        Còn bạn, bạn nghĩ sao về "cơn bão" Mixue hiện nay?<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

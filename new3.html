@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/grid.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/tintuc/tintuc.css">
+    <title>Mixue</title>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <nav>
+            <div class="grid wide header">
+                <a href="./index.html">
+                    <img src="./src/img/home/logo.png" alt="" class="header__logo">
+                </a>
+                <div class="header__list">
+                    <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
+                    <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
+                    <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
+                    <a class="header__item cta" href="./sukien.html"><span class="hover-underline-animation">Sự Kiện</span></a>
+                    <a class="header__item cta" href="./thongtin.html"><span class="hover-underline-animation">Thông Tin</span></a>
+                    <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
+                    <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
+                    <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
+                 </div>
+                  <!-- The Modal -->
+            <button id="cart">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <div class="grid wide">
+            <div class="app_new">
+                <div class="new__product">
+                    <h1 class="new__product-h1">
+                        "Bí mật" đằng sau những cây kem 10.000 đồng và trà sữa rẻ gần nhất thị trường của Mixue
+                    </h1>
+                    <p class="new__item-time">
+                        05-04-2023 - 08:46 AM | Doanh nghiệp
+                    </p>
+                    <img src="./src/img/TinTuc/new3_1.webp" alt="" class="new__product-img">
+                    <h2 class="new__item-header">
+                        Cho đến nay, các cửa hàng Mixue gần như chiếm hết các vị trí ''đắc địa'' nhất tại Thủ đô và vẫn không ngừng bành trướng với khoảng 137 cửa hàng tính đến tháng 12/2022. Còn khắp Việt Nam đã có khoảng 600 cửa hàng Mixue ở 43 tỉnh thành.
+                    </h2>
+                    <p class="new__product-text">
+                        Đi dọc các con phố Hà Nội, không khó để bắt gặp những cửa hàng có tấm biển đỏ nổi bật, với dòng chữ “ Mixue – Since 1997 – Ice Cream & Tea ”, bên cạnh là biểu tượng người tuyết cầm trên tay cây kem.<br>
+
+                        Với mức giá “hạt dẻ”: trà sữa trân châu có giá 25.000 đồng hay kem ốc quế giá 5.000 đồng, 10.000 đồng, Mixue thu hút được một tệp khách hàng trung thành. Trong khi các thương hiệu khác gấp 2, 3 lần với 50.000 đồng đến 65.000 đồng/cốc trà sữa, mức giá này khiến Mixue “không đối thủ”.<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new3_2.webp" alt="" class="new__product-img">
+                    <p class="new__product-text">
+                        “Ngon, rẻ” là câu cửa miệng mà bất cứ khách hàng nào cũng nhớ đến khi nhắc tới Mixue. Nhờ thấu hiểu thói quen tiêu dùng và bối cảnh kinh tế suy thoái đang khiến người tiêu dùng thắt chặt hầu bao, Mixue đã trở thành "cơn sốt" mới ở thị trường kem, trà sữa.<br>
+
+                        Chính thức nhảy vào thị trường Việt Nam năm 2018 với cửa hàng đầu tiên tại Hà Nội, cho đến nay, các cửa hàng Mixue gần như chiếm hết các vị trí ''đắc địa'' nhất tại Thủ đô và vẫn không ngừng bành trướng với khoảng 137 cửa hàng tính đến tháng 12/2022. Còn khắp Việt Nam đã có khoảng 600 cửa hàng Mixue ở 43 tỉnh thành. Để hình dung về quy mô của con số 600, có thể làm phép so sánh hơi "khập khiễng" một chút với ông lớn đồ uống tại Việt Nam là Highlands Coffee với 520 cửa hàng vào tháng 8/2022.<br>
+
+                        Để mở rộng quy mô và doanh thu, Mixue đã bắt đầu kinh doanh nhượng quyền từ sớm. Theo một số nhân vật có kinh nghiệm trong ngành F&B, đằng sau cây kem 10.000 đồng và cốc trà sữa gần như rẻ nhất thị trường thì bản chất mô hình kinh doanh của Mixue là B2B.<br>
+
+                        B2B là viết tắt của “Business to Business”. Đây là hình thức kinh doanh, buôn bán (gồm tổng thể các hoạt động từ Marketing đến bán hàng (sales) và chăm sóc khách hàng) giữa doanh nghiệp với doanh nghiệp. Trong thực tế, một số trường hợp giao dịch phức tạp sẽ được diễn ra dựa trên báo giá mua bán sản phẩm, thỏa thuận trực tiếp và ký kết hợp đồng giữa các bên.<br>
+
+                        Trên thế giới, trước Mixue, đã có rất nhiều thương hiệu thành công nhờ B2B, đơn cử như phần lớn cửa hàng của chuỗi Domino’s Pizza hiện nay đều là nhượng quyền. Cách thức của Domino's Pizza là chú trọng vào khâu R&D để ra sản phẩm mới, cùng với đó là tập trung vào công nghệ (app đặt hàng của Domino's đứng vào hàng top, lượng đơn sánh ngang với các ứng dụng công nghệ chuyên giao đồ ăn như UberEats, DoorDash hay Grubhub...).<br>
+
+                        Thị trường Việt Nam còn đi "nhanh" và "sáng tạo" hơn, khi nhiều thương hiệu đã “chơi lớn” nhượng quyền 0 đồng (phía đối tác sẽ không phải tốn phí nhượng quyền) và không thu phí quản lý…Mô hình B2B của Mixue được tiến hành như sau: Bỏ hẳn thu phí nhượng quyền, họ tập trung vào bán nguyên liệu.<br>
+
+
+                        Mixue không tham gia vào việc quản lý các cửa hàng nhượng quyền và không chia sẻ lợi nhuận. Người nhượng quyền sẽ phải chịu trách nhiệm về lợi nhuận cũng như tổn thất của chính họ. Điều này giúp công ty chịu ít rủi ro.<br>
+
+                        Mixue chỉ cung cấp nguyên liệu, bao bì cho đối tác và tham gia đào tạo. Đặc biệt, Mixue có nhà máy sản xuất nguyên liệu pha chế riêng, mạng lưới kho hàng rộng và nguồn trà địa phương đảm bảo nên có thể tối ưu chi phí.<br>
+
+                        Bên cạnh yếu tố then chốt là mô hình, xét về yếu tố sản phẩm , sự thành công của Mixue cũng được tạo nên từ bước chuyển đổi thông minh tại thị trường Việt Nam.
+
+                        Ban đầu, khi cơn sốt trà sữa đang bùng nổ thì Mixue cũng tập trung vào trà sữa. Nhưng sau đó, khi brand trà sữa "ngập ngụa" thì Mixue xoay sang trục kem tươi, còn trà sữa thì không ''đấu'' trực diện với các đối thủ nữa mà tập trung vào phân khúc giá rẻ, cho học sinh, sinh viên.<br>
+
+                        Mixue đã tinh gọn menu trà sữa. Kem - vốn là sản phẩm dẫn trở thành sản phẩm chính. Nổi bật nhất phải kể đến ''hot trend'' kem Bing Chilling 10.000 đồng của Mixue khiến giới trẻ đổ xô đi mua. Tập trung hẳn vào kem tươi, Mixue gần như độc quyền ''làm mưa làm gió'' ở một thị trường mới.<br>
+
+                        Cuối cùng, không thể bỏ qua phương thức quảng bá để tăng độ nhận diện thương hiệu. Mixue đã sử dụng Character Marketing (chiến lược linh vật). Linh vật của Mixue có tên là Snow King, một người tuyết mặc áo choàng và cầm trượng. Không chỉ tạo sự khác biệt, linh vật có thể dễ dàng tạo được câu chuyện và gắn kết khách hàng.<br>
+                    </p>
+                    <img src="./src/img/TinTuc/new3_3.webp" alt="" class="new__product-img">
+                    <p class="new__product-text">
+                        Tới thời điểm này, riêng tại Trung Quốc - quê hương của Mixue đã có tổng cộng 21.500 cửa hàng, gấp 3 lần đối thủ cùng ngành là Good Me và dự kiến chạm 30.000 nhanh chóng nếu duy trì tốc độ mở rộng nhượng quyền như hiện tại.<br>
+
+Từ thành công ở thị trường Trung Quốc, ﻿có thể nhìn ra một thị trường nhượng quyền còn cực kỳ màu mỡ và tiềm năng tại Việt Nam. Tuy vậy, bởi sống bằng bán nguyên liệu, Mixue sẽ muốn mở nhiều, mà khi mật độ quá nhiều thì người mua nhượng quyền sẽ phải cạnh tranh với nhau. Theo một chuyên gia, phần rủi ro này người mua nhượng quyền cần phải tính toán hoặc bổ sung điều khoản (chẳng hạn không được mở cách nhau bao xa) trong hợp đồng để tối ưu hiệu quả kinh doanh.<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Địa chỉ</li>
+                            <li>
+                                <i class="footer-icon fa-solid fa-location-dot"></i>41 Vũ Tông Phan , Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>159 Giảng Võ, quận Ba Đình, Hanoi, Vietnam</li>
+                            <li><i class="footer-icon fa-solid fa-location-dot"></i>Phố Chùa Thông 263, Hà Nội, Việt Nam, Son Tay, Vietnam</li>
+                            <li><i class="footer-icon fa-regular fa-envelope"></i>mxbc.mixuevietnam@gmail.com</li>
+                            <li><i class="footer-icon fa-solid fa-phone"></i></i>
+                                094 932 66 63
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                                <li class="li-active">Đường dây nóng nhượng quyền thương mại chính thức</li>
+                            <li>400-060-8888</li>
+                            <li>Thứ Hai đến Chủ nhật (trừ ngày lễ)</li>
+                            <li>Mùa hè:8:30-11:50 13:50-18:00</li>
+                            <li>Mùa đông:8:30-11:50 13:20-17:30</li>
+                        </ul>
+                    </div>
+                    <div class="col col l-4 m-4 c-12">
+                        <ul class="footer_list">
+                            <li class="li-active">Công ty</li>
+                            <li>Home</li>
+                            <li>Sản phẩm</li>
+                            <li>Tin tức</li>
+                            <li>Sự kiện</li>
+                            <li>Thông tin</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <p class="footer-p1">2022 Mixue Corporation. All Right Reserved</p>
+                    <p class="footer-p2" >Follow us at <i class="footer-icon fa-brands fa-facebook"></i><i class="footer-icon fa-brands fa-instagram"></i><i class="footer-icon fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
