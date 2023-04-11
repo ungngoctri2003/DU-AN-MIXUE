@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="./src/css/base.css">
     <link rel="stylesheet" href="./src/css/grid.css">
     <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/reponsive.css">
     <link rel="stylesheet" href="./src/css/nhapky/nhapky.css">
     <link rel="stylesheet" href="./src/css/home/toast.css">
+    <link rel="stylesheet" href="./src/css/cart_product/cart_product.css">
+    <link rel="stylesheet" href="./src/css/reponsive.css">
+
 </head>
 <body>
     <div class="app">
@@ -25,7 +27,7 @@
                 <a href="./index.html">
                     <img src="./src/img/home/logo.png" alt="" class="header__logo">
                 </a>
-                <div class="header__list">
+                <div class="header__list hide-moblie-tablet">
                     <a class="header__item cta" href="./index.html"><span class="hover-underline-animation">Home</span></a>
                     <a class="header__item cta" href="./product.html"><span class="hover-underline-animation">Sản Phẩm</span></a>
                     <a class="header__item cta" href="./tintuc.html"><span class="hover-underline-animation">Tin Tức</span></a>
@@ -34,9 +36,60 @@
                     <a class="header__item cta" href="./lienhe.html"><span class="hover-underline-animation"> Liên hệ</span></a>
                     <a class="header__item cta" href="./dangnhap.html"><span class="hover-underline-animation">Đăng Nhập</span></a>
                     <a class="header__item cta" href="./dangki.html"><span class="hover-underline-animation">Đăng Ký</span></a>
-                    <a class="header__item cta" href="#"><span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span></a>
                  </div>
+                  <!-- The Modal -->
+            <button id="cart" class="hide-moblie-tablet">
+                <span class="hover-underline-animation"> <i class="fa-solid fa-cart-shopping"></i></span>
+            </button>
+            <div id="myModal" class="modal hide-moblie hide-element">
+                <div class="modal-content hide-moblie">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <!-- DANH SÁCH SẢN PHẨM TRONG CART -->
+                            <div class="cart-items">
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
             </div>
+            </div>
+            
+              <!-- Header Moblie -->
+              <input type="checkbox" name="" id="header-input" class="header-input">
+              <label for="header-input" class="modal"></label>
+              <label for="header-input" class="header_close presently-moblie-tablet">
+                  <i class="fa-solid fa-list"></i>
+              </label >
+                  <ul class="nav__moblie-list">
+                    <a class="nav__item-moblie" href="./index.html"><span class="nav__item-moblie-link">Home</span></a>
+                    <a class="nav__item-moblie" href="./product.html"><span class="nav__item-moblie-link">Sản Phẩm</span></a>
+                    <a class="nav__item-moblie" href="./tintuc.html"><span class="nav__item-moblie-link">Tin Tức</span></a>
+                    <a class="nav__item-moblie" href="./sukien.html"><span class="nav__item-moblie-link">Sự Kiện</span></a>
+                    <a class="nav__item-moblie" href="./thongtin.html"><span class="nav__item-moblie-link">Thông Tin</span></a>
+                    <a class="nav__item-moblie" href="./lienhe.html"><span class="nav__item-moblie-link"> Liên hệ</span></a>
+                    <a class="nav__item-moblie" href="./dangnhap.html"><span class="nav__item-moblie-link">Đăng Nhập</span></a>
+                    <a class="nav__item-moblie" href="./dangki.html"><span class="nav__item-moblie-link">Đăng Ký</span></a>
+                          <label for="header-input" class="nav__moblie-item-close">
+                              <i class="fa-solid fa-xmark nav__moblie-item-icon"></i>
+                          </label>
+                  </ul>
         </nav>
         <div class="wrapper">
             <h1>ĐĂNG KÝ</h1>

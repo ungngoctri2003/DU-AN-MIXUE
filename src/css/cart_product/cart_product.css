@@ -298,3 +298,7 @@ h5.modal-title {
     color: var(--red-color);
     font-size: 2rem;
   }
+  .product__moblie {
+    display: none;
+    margin-top: 100px;
+  }

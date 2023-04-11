@@ -46,3 +46,6 @@ html {
     transform: translateY(10px);
     transition: 100ms;
    }
+.hide-element {
+    display: none;
+}
