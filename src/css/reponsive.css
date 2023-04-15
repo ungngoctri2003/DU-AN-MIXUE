@@ -13,6 +13,23 @@
         border: 1px solid var(--red-color);
         box-shadow: 3px 3px 10px #e30558, -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px #e30558, inset -1px -1px 6px rgba(255, 255, 255, 0.4);
     }
+    .cart-moblie-tablet {
+        position: absolute;
+        z-index: 1; 
+        top: 25%;
+        width: 100%;
+}
+    .modal-content {
+        margin: 0 5%;
+        width: 90%;
+        margin: 0;
+    }
+    .cart-header,.cart-total-title,.btn-secondary,.btn-primary,.cart-item-title,.cart-column,.btn-danger,.editing-view-port >div     {
+        font-size: 1.2rem;
+    }
+    .btn-danger {
+        padding: 15px;
+    }
 }
 /* Tablet  */
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -52,6 +69,7 @@
         top: 4%;
         right: 13%;
     }
+
 }
 /* Moblie */
 @media (max-width: 739px){
@@ -102,4 +120,5 @@
     .information__container {
         padding: 5px;
     }
+    
 }
