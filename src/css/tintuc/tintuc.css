@@ -51,10 +51,11 @@
     font-size: 1.4rem;
     text-align: center;
     color: #929292;
+    font-style: italic;
 }
 .new__product-text {
     font-family: "Times New Roman";
     font-size: 1.8rem;
-    line-height: 1.8rem;
+    line-height: 2.8rem;
     color: var(--text-color);
 }

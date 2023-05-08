@@ -8,6 +8,7 @@
 }
 .information__text {
     font-size: 1.4rem;
+    line-height: 2rem;
     font-family: "QuicksandRegular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     padding: 10px 0;
     margin: 0;
