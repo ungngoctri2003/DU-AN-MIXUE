@@ -1,4 +1,4 @@
-//Questioon
+//Question
 let list = document.querySelectorAll('.question__list .question__item');
 
 list.forEach(item => {
