@@ -397,3 +397,26 @@ footer {
     #top-up:hover {
     color: var(--hover-color)
     } 
+    /* Loading */
+    #preloader  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fefefe;
+        z-index: 99;
+    }
+   #status  {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-image: url(../img/home/loading.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: -100px 0 0 -150px;
+    }
+   
+   
