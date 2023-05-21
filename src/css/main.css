@@ -355,7 +355,7 @@ to {
 /* Footer */
 footer {
     background-color: #fff5f5;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 .footer_list {
     list-style: none;
@@ -383,3 +383,17 @@ footer {
     font-size: 1.4rem;
     margin-left: 111px;
 }
+/* Scroll_top */
+#top-up {
+    font-size: 6rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    color: var(--red-color);
+    bottom: 20px;
+    right: 15px;
+    display: none;
+    }
+    #top-up:hover {
+    color: var(--hover-color)
+    }
